@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+   max-width: 1280px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center;     /* Center the logo vertically */
+    height: 100px;           /* Adjust the height as needed */
+    padding: 0 20px;         /* Add padding for mobile screens */
+    margin-top: 30px;
+}
+
+/* Logo image styling */
+header img {
+    max-width: 200px;         /* Make sure the image resizes to fit its container */
+    width: auto;
+    height: 200px;            /* Maintain the image's aspect ratio */
+    max-height: 200px;       /* Limit the height for larger screens */
+}
+
+
+.Navbar { 
+    padding: 15px 50px;         /* Add padding for spacing */
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Flexbox styling for the UL element */
+.Navbar ul {
+    display: flex;               /* Use Flexbox */
+    justify-content: space-around; /* Evenly distribute space between items */
+    list-style-type: none;        /* Remove bullet points */
+    padding: 0;                   /* Remove default padding */
+    margin: 0;                    /* Remove default margin */
+}
+
+/* Style for the LI elements */
+.Navbar li {
+    margin: 0 10px;               /* Add some spacing between items */
+}
+
+/* Style for the links */
+.Navbar a {
+    text-decoration: none;        /* Remove underline */
+    color: #333;                  /* Default link color */
+    font-size: 18px;              /* Adjust font size */
+}
+
+.main {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+    background-color: #fff;
+    gap: 0;         /* Gap between flex items */
+    padding: 0;     /* Space between the container’s border and content */
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+.Main-title {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 42px;
+}
+
+.Main-title p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+/* General styling */
+.text-container {
+    padding: 50px 0;
+    column-count: 3;
+    margin-top:-50px
+}
+
+/* Individual text blocks */
+.text {
+    padding: 0;
+}
+
+/* Headings */
+.Headings {
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.text p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: 30px; /* Adds space below each paragraph */
+}
+
+.album-grid {
+    display: grid;
+    grid-template-areas: 
+        "featured-album album-cover album-cover"
+        "featured-album album-cover album-cover";
+    grid-template-columns: 2fr 1fr 1fr; /* Featured album is larger */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Featured album styling */
+.featured-album {
+    grid-area: featured-album;
+    background-color: rgb(252, 249, 249); /* Placeholder in case image doesn't load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.featured-album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+/* Album cover styling */
+.album-cover {
+    background-color: rgb(255, 255, 255); /* Placeholder in case image doesn't load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits well within the area */
+}
+
+.author {
+    width: 1280px;
+    background-color: #fff;
+
+}
+
+/* Container for the author section */
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between the text and the image */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 70px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Author information */
+.author-info {
+    flex: 1;
+}
+
+.author-info h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.author-info p {
+    max-width: 900px; /* Adjust the width for the text */
+    line-height: 1.6;
+    padding: 20px 0px;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+/* Profile image */
+.profile-image {
+    width: 200px; /* Fixed width for the circle image */
+    height: 200px;
+    border-radius: 50%; /* Make it a circle */
+    background-color: lightgray; /* Placeholder background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image fits inside the circle */
+    margin: 0 50px;
+ 
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle without stretching */
+}
+
+/* Profile image */
+.profile-image-2 {
+    width: 200px; /* Fixed width for the circle image */
+    height: 200px;
+    border-radius: 50%; /* Make it a circle */
+    background-color: lightgray; /* Placeholder background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image fits inside the circle */
+    margin: 0 50px;
+ 
+}
+
+.profile-image-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle without stretching */
+}
+
+
+/* Footer styles */
+footer {
+    text-align: center;           /* Center the text */
+    font-size: 14px;              /* Text size */
+    width: 100%;                  /* Ensure the footer takes full width */
+    color: #fff;
+    background-color: #14181d;
+    padding: 30px;
+  
+}
+
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+    .Main-title {
+        font-size: 36px; /* Adjust font size for tablets */
+    }
+
+    .Main-title p {
+        font-size: 24px; /* Reduce font size for paragraph */
+        max-width: 90%; /* Adjust width for better readability on smaller screens */
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+    .Main-title {
+        font-size: 30px; /* Further reduce font size for mobile screens */
+    }
+
+    .Main-title p {
+        font-size: 20px; /* Adjust paragraph font size for mobile */
+        margin-top: 15px;
+        max-width: 100%; /* Allow full width usage on mobile */
+    }
+}
+/* Responsive styling for mobile */
+@media (max-width: 720px) {
+    .Navbar ul {
+        display: flex;              /* Ensure flexbox layout */
+        flex-direction: row;        /* Keep items in a horizontal row */
+        justify-content: space-around; /* Space items evenly */
+        align-items: center;        /* Center items vertically */
+        padding: 0;                 /* Remove extra padding */
+    }
+
+    .Navbar li {
+        margin: 0 5px;              /* Adjust margin for smaller spacing */
+    }
+
+    .Navbar a {
+        font-size: 18px;            /* Adjust font size for smaller screens */
+    }
+}
+
+/* Responsive styles for smaller screens (mobile) */
+@media (max-width: 720px) {
+    header {
+        height: 80px;          /* Reduce header height for mobile */
+    }
+
+    header img {
+        max-width: 150px;      /* Reduce the logo size for mobile screens */
+        max-height: 80px;      /* Ensure logo doesn't exceed the header height */
+    }
+}
+
+/* Responsive styles for larger screens (desktops) */
+@media (min-width: 769px) {
+    header {
+        height: 120px;         /* Increase header height for desktops */
+    }
+
+    header img {
+        max-width: 200px;      /* Adjust the logo size for larger screens */
+        max-height: 100px;     /* Ensure the logo remains proportional */
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: block;         /* Stack items vertically on smaller screens */
+        width: 100%;            /* Full width on mobile */
+        padding: 20px;          /* Reduce padding for smaller screens */
+        gap: 20px;              /* Reduce the gap between items */
+    }
+
+
+    p {
+        margin-bottom: 15px;    /* Reduce spacing between paragraphs */
+        font-size: 12px;        /* Reduce font size slightly for mobile */
+    }
+}
+
+/* For larger screens (desktops and beyond) */
+@media (min-width: 1024px) {
+    .main {
+        width: 100%;            /* Ensure the width adjusts to larger screens */
+        padding: 50px;          /* Increase padding for larger screens */
+    }
+
+    .Headings {
+        font-size: 48px;        /* Larger font size for headings on bigger screens */
+    }
+
+    p {
+        font-size: 18px;        /* Larger font size for paragraphs */
+    }
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-areas: 
+            "featured-album"
+            "album-cover"
+            "album-cover"
+            "album-cover"
+            "album-cover";
+        grid-template-columns: 1fr; /* Full width for each element */
+        grid-template-rows: auto;
+    }
+    .featured-album {
+        display: none; /* Hide the featured album on tablets */
+    }
+
+    .album-cover {
+        height: 400px; /* Set a fixed height for better mobile layout */
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    .album-grid {
+        grid-template-areas: 
+            "album-cover album-cover"
+            "album-cover album-cover"; /* 2x2 grid layout */
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-rows: 1fr 1fr;    /* Two equal rows */
+       width: 90%;
+    }
+
+    .featured-album {
+        display: none; /* Hide the featured album on tablets */
+    }
+
+    .album-cover {
+        height: 400px; /* Adjust height for the covers on tablet */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .author-section {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    .author-info {
+        text-align: center; /* Center the text for smaller screens */
+    }
+
+    .author-info h2 {
+        font-size: 36px; /* Smaller font for mobile screens */
+    }
+
+    .author-info p {
+        padding: 20px; /* Reduce padding for mobile */
+        font-size: 18px; /* Smaller font size for readability on smaller screens */
+        text-align: left;
+    }
+
+    .profile-image {
+        width: 150px; /* Smaller profile image on mobile */
+        height: 150px;
+        margin: 20px 0; /* Add margin for spacing between the text and image */
+    }
+}
+
+@media (max-width: 480px) {
+    .author-info h2 {
+        font-size: 38px; /* Further reduce font size for smaller screens */
+    }
+
+    .author-info p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        text-align: left;
+    }
+
+    .profile-image {
+       display: none;
+    }
+
+    .profile-image-2 {
+        width: 200px; /* Smaller image size for tablets */
+        height: 200px;
+        display: flex;
+        margin: 30px;
+   
+    }
+
+}
+
+/* Responsive design for tablets and mobile phones */
+@media (max-width: 1024px) {
+    /* For tablets */
+    .text-container {
+        column-count: 2; /* Two columns on tablets */
+        padding: 40px 0;
+    }
+
+    .text p {
+        font-size: 18px; /* Slightly smaller paragraph font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    /* For mobile devices */
+    .text-container {
+        column-count: 1; /* Single column on mobile */
+        padding: 30px 0px; /* Add some side padding for smaller screens */
+    }
+
+    .Headings {
+        font-size: 40px; /* Smaller heading font size for mobile */
+        margin-top: 15px;       /* Adjust margin for mobile */
+        margin-bottom: 5px;     /* Adjust margin for mobile */
+        font-size: 48px;        /* Adjust font size for better readability */
+        text-align: center;
+    
+    }
+
+    .text p {
+        font-size: 18px; /* Smaller paragraph font size for mobile */
+    }
+}
+
+/* Responsive design for tablets and mobile phones */
+@media (max-width: 1024px) {
+    /* For tablets */
+    .text-container {
+        column-count: 1; /* Two columns on tablets */
+        padding: 40px 0px; /* Add padding for better spacing */
+    }
+
+    .Headings {
+        font-size: 40px; /* Slightly smaller heading font size for tablets */
+        text-align: center; /* Center heading on tablet */
+    }
+
+    .text p {
+        font-size: 20px; /* Slightly smaller paragraph font size for tablets */
+    }
+}
+
+
+/* --------- Tablet (768px - 1024px) --------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header img {
+        max-width: 180px; /* Slightly larger logo on tablets */
+        max-height: 120px;
+    }
+
+    .Navbar ul {
+        justify-content: space-evenly;
+    }
+
+    .Navbar a {
+        font-size: 18px; /* Larger font for tablet */
+    }
+
+    .main {
+        width: 90%;
+        padding: 40px;
+        gap: 30px; /* More spacing on tablet */
+    }
+
+    .Main-title {
+        font-size: 36px; /* Increase title size on tablet */
+    }
+
+    .Main-title p {
+        font-size: 22px; /* Larger text for tablets */
+    }
+
+    /* Text container - Grid layout for tablets */
+    .text-container {
+        grid-template-columns: 1fr ; /* Two columns on tablet */
+    }
+
+    /* Author section */
+    .author-section {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .author-info h2 {
+        font-size: 38px; /* Larger text for tablet */
+    }
+
+    .author-info p {
+        font-size: 18px;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+        /* For tablets */
+    .author-section {
+        padding: 40px 20px; /* Reduce padding for tablets */
+    }
+
+    .author-info h2 {
+        font-size: 36px; /* Slightly smaller heading font size for tablets */
+    }
+
+    .author-info p {
+        max-width: 100%; /* Make the text span full width */
+        padding: 15px 0px; /* Reduce padding for smaller screens */
+        font-size: 18px; /* Smaller paragraph font size for tablets */
+    }
+
+    .profile-image {
+        width: 200px; /* Smaller image size for tablets */
+        height: 200px;
+        margin: 0 30px; /* Adjust margin for better spacing */
+    }
+
+    
+
+}
+
+/* Tablet view (max-width 768px) */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 12px;          /* Decrease font size for tablets */
+        padding: 30px;            /* Reduce padding */
+    }
+}
+
+/* Mobile view (max-width 480px) */
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 10px;          /* Smaller font size for mobile */
+        padding: 12px;            /* Reduce padding further */
+        text-align: center;         /* Change alignment to left for smaller screens */
+    }
+}
+
+/* General .author styles (for desktop) */
+.author {
+    width: 100%;                /* Full width for fluid design */
+    max-width: 1280px;          /* Maximum width to limit on larger screens */
+    background-color: #fff;
+    margin: 0 auto;             /* Center the content on larger screens */
+    padding: 50px;              /* Add padding for desktop */
+}
+
+/* Tablet view (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+    .author {
+        width: 90%;             /* Reduce width for better fit on tablets */
+        padding: 20px;          /* Reduce padding for better spacing */
+    }
+}
+
+/* Mobile view (max-width 768px) */
+@media screen and (max-width: 768px) {
+    .author {
+        width: 95%;             /* Further reduce width for mobile devices */
+        padding: 20px;          /* Smaller padding for smaller screens */
+    }
+}
+
+/* Small mobile view (max-width 480px) */
+@media screen and (max-width: 480px) {
+    .author {
+        width: 100%;            /* Use full width for small mobile devices */
+        padding: 10px;          /* Minimal padding for very small screens */
+    }
+}   
