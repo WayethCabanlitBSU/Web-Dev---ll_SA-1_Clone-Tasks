@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="todo.css">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
+  <title>To-do List</title>
+</head>
+
+<body>
+ <!-- This site allows you to make a list locally when you input something in it -->
+  
+  <!-- Main container for the entire app -->
+<main class="task-app">
+  <!-- Title of the To-Do List application -->
+  <h1>My Todo List...</h1>
+  
+  <!-- Header section that contains the date and input area -->
+  <div class="task-input-header">
+    <!-- Dynamic date display -->
+    <h1><span id="date"></span></h1>
+    
+    <!-- Input section for adding tasks -->
+    <div class="task-input">
+      <!-- Input field for entering a new task -->
+      <input type="text" id="item" placeholder="Enter a task...">
+      <!-- Button to submit a new task -->
+      <button id="enter">Enter</button>
+    </div>
+  </div>
+  
+  <!-- Container where the task items will be dynamically listed -->
+  <div class="task-list"></div>
+</main>
+
+  <!-- Link to external JavaScript file -->
+  <script src="todo.js"></script>
+
+</body>
+
+</html>

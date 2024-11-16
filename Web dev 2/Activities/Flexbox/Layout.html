@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Link to the external stylesheet for navigation styling -->
+    <link rel="stylesheet" href="Nav.css">
+</head>
+<body>
+    <!-- Banner section that contains the header -->
+    <div class="banner">
+        <!-- Header section with the navigation bar -->
+        <header>
+            <div class="container"> 
+                <!-- Navigation bar -->
+                <nav class="navbar">
+                  
+                    <a href="#" class="nav-branding">Bonus Exercises</a>
+                    
+                    <!-- Navigation menu -->
+                    <ul class="nav-menu">
+                        <!-- Links to other pages -->
+                        <li class="nav-item">
+                            <a href="Card.html" class="nav-link">Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="img.html" class="nav-link">Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="quiz.html" class="nav-link">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="To-do_List/todo.html" class="nav-link">To do list</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Hamburger menu for small screens -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Footer section -->
+        <footer>
+            <h1>©Wayeth Ken C. Cabanlit <br> CC YEAR 2 GROUP 3</h1>
+        </footer>
+
+        <!-- JavaScript for responsive navigation functionality -->
+        <script>
+            // Select hamburger menu and navigation menu elements
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            // Toggle active class to show or hide the menu
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            // Remove active class when a navigation link is clicked
+            document.querySelectorAll(".nav-link").forEach(n => 
+                n.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                })
+            );
+        </script>
+    </div>
+</body>
+</html>

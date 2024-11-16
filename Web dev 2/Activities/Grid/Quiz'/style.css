@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* White background */
+    color: #000000; /* Black text */
+}
+
+/* Quiz Container */
+.quiz-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, auto);
+    gap: 20px;
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Question Area */
+.question-area {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #000000; /* Black border */
+}
+
+/* Answers Area */
+.answers-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Buttons for Answer Choices */
+button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #000000; /* Black border */
+    color: #000000; /* Black text */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .answers-area {
+        grid-template-columns: 1fr; /* Stack buttons on smaller screens */
+    }
+
+    .quiz-container {
+        padding: 20px;
+    }
+}

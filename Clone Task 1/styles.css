@@ -245,7 +245,11 @@ footer {
     color: #fff;
     background-color: #14181d;
     padding: 30px;
-  
+ 
+}
+
+footer p{ 
+    margin: 10px;
 }
 
 

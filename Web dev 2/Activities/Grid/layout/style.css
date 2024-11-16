@@ -1,0 +1,125 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aesthetic styling for body */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f9fafc;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 300px 1fr 300px; /* Sidebar width increased */
+  grid-template-areas:
+    "header header header"
+    "sidebar main reminders"
+    "footer footer footer";
+}
+
+/* Header styling */
+header {
+  grid-area: header;
+  background-color: #3b3f58;
+  color: #f0f0f5;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+aside {
+  grid-area: sidebar;
+  background-color: #2e3246;
+  color: #f0f0f5;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+aside nav ul {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+aside nav ul li {
+  margin-bottom: 1.2em;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  color: #b3b8d4;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+aside nav ul li a:hover {
+  color: #fff;
+}
+
+/* Main content styling */
+main {
+  grid-area: main;
+  padding: 2em;
+  overflow-y: auto;
+}
+
+/* Large information section styling */
+.main-info {
+  background-color: #fff;
+  padding: 2em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 1.2em;
+}
+
+.main-info h2 {
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.main-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  padding: 1.8em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 1.2em;
+}
+
+.card h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+  grid-area: footer;
+  background-color: #3b3f58;
+  color: #f0f0f5;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.1em;
+}
