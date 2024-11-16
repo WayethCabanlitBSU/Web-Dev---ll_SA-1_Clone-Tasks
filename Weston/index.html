@@ -1,221 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and viewport settings for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking to external CSS for styling -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for icons (e.g., cart, user icon) -->
     <script src="https://kit.fontawesome.com/504050c3f7.js" crossorigin="anonymous"></script>
+    
+    <!-- Title of the page -->
     <title>Westons chocolate</title>
 </head>
 <body>
+    <!-- Header Section with logo and navigation menu -->
     <header>
         <nav class="header__nav">
-       
-          <div class="header__logo">
-            <h4>Westons</h4>
-            <div class="header__logo-overlay"></div>
-          </div>
-  
-          <ul class="header__menu" >
-            <li class="nav-item">
-              <a href="#menu" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#food" class="nav-link">Food</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
-            </li> 
-            <li class="nav-item">
-              <a href="#about-us" class="nav-link"><i class="fa-solid fa-user"></i>User</a>
-            </li>
-          </ul>
-  
-          <ul class="header__menu-mobile">
-            <li>
-              <img src="assets/menu.svg" alt="menu" />
-            </li>
-          </ul>
+            <div class="header__logo">
+                <!-- Company Logo and its overlay -->
+                <h4>Westons</h4>
+                <div class="header__logo-overlay"></div>
+            </div>
+
+            <!-- Main navigation menu for the website -->
+            <ul class="header__menu">
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#food" class="nav-link">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link"><i class="fa-solid fa-user"></i>User</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu for small screens -->
+            <ul class="header__menu-mobile">
+                <li>
+                    <img src="assets/menu.svg" alt="menu" />
+                </li>
+            </ul>
         </nav>
-      </header>
-      <section class="hero">
+    </header>
+
+    <!-- Hero Section: A large section to highlight key messaging -->
+    <section class="hero">
         <div class="hero-image">
-          <img 
-            src="assets/Chocolate.png"
-            alt="sushi"
-            data-aos="fade-up"
-          />
-          <h2>
-            ち <br />
-            ょ <br />
-            こ <br />
-            れ
-          </h2>
-  
-          <div class="hero-image__overlay"></div>
+            <!-- Image for the hero section, with a fade-up animation -->
+            <img src="assets/Chocolate.png" alt="sushi" data-aos="fade-up" />
+            <h2>ち <br /> ょ <br /> こ <br /> れ</h2>
+            <div class="hero-image__overlay"></div>
         </div>
-  
+
+        <!-- Content section for the hero, describing the product -->
         <div class="hero-content">
-          <div class="hero-content-info">
-            <h1>Pure Bliss in Every Bite!</h1>
-            <p>Whether you're craving a sweet escape or looking to treat someone special, our chocolates promise a moment of pure delight with every bite.</p>
-  
-            <div class="hero-content__buttons">
-              <button class="hero-content__order-button">Order Now</button>
-              <button class="hero-content__play-button">
-                <i class="fa-solid fa-play"></i>
-                How to Order
-              </button>
-            </div>
-          </div>
+            <div class="hero-content-info">
+                <h1>Pure Bliss in Every Bite!</h1>
+                <p>Whether you're craving a sweet escape or looking to treat someone special, our chocolates promise a moment of pure delight with every bite.</p>
 
-          <div class="hero-content_sales">
-            <div class="hero-content__sales flex-center">
-              <h4>12<span>m+</span></h4>
-              <p>World wide sales</p>
+                <!-- Buttons to order and view how to order -->
+                <div class="hero-content__buttons">
+                    <button class="hero-content__order-button">Order Now</button>
+                    <button class="hero-content__play-button">
+                    </button>
+                </div>
             </div>
-  
-            <div class="hero-content_award">
-              <img src="assets/logochoco.png" alt="user" />
-              <p>International Chocolate Awards winner</p>
+
+            <!-- Sales and Awards section -->
+            <div class="hero-content_sales">
+                <div class="hero-content__sales flex-center">
+                    <h4>12<span>m+</span></h4>
+                    <p>World wide sales</p>
+                </div>
+
+                <div class="hero-content_award">
+                    <img src="assets/logochoco.png" alt="user" />
+                    <p>International Chocolate Awards winner</p>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about-us">
+        <div class="about-us__image">
+            <div class="about-us_chocolate">
+                <img src="assets/double.png" alt="choco"/>
+            </div>
+            <button class="about-us__button">
+                Learn More
+                <img src="assets/arrow-up-right.svg" alt="learn more" />
+            </button>
+            <div class="about-us_chocolate2">
+                <img src="assets/bar.png" alt="choco" />
+            </div>
         </div>
 
-          </section>
+        <!-- About Us content: Description of the company and its offerings -->
+        <div class="about-us__content">
+            <p class="choco__subtitle">About Us</p>
+            <h3 class="choco__title">Discover the joy of exceptional chocolate!</h3>
+            <p class="choco__description">At Weston Chocolate, we specialize in crafting rich, luxurious chocolates made from the finest ingredients. Whether you're looking for a sweet treat or a gift for someone special, our handcrafted chocolates offer a moment of pure indulgence in every bite.</p>
+        </div>
+    </section>
 
-          <section class="about-us" id="about-us">
-            <div class="about-us__image">
-              <div class="about-us_chocolate">
-                <img src="assets/double.png" alt="choco"/>
-              </div>
+    <!-- Popular Foods Section: Showcasing best-selling products -->
+    <section class="popular-foods" id="menu">
+        <h2 class="popular-foods__title">Popular selections</h2>
 
-                 <button class="about-us__button">
-          Learn More
+        <!-- Filters for selecting chocolate types -->
+        <div class="popular-foods__filters sushi__hide-scrollbar">
+            <button class="popular-foods__filter-btn active">Best sellers</button>
+            <button class="popular-foods__filter-btn">Value packs</button>
+            <button class="popular-foods__filter-btn">Single piece</button>
+            <button class="popular-foods__filter-btn">Specials</button>
+            <button class="popular-foods__filter-btn">Custom</button>
+            <button class="popular-foods__filter-btn">All</button>
+        </div>
 
-          <img src="assets/arrow-up-right.svg" alt="learn more" />
-        </button>
-                
-              <div class="about-us_chocolate2">
-                <img src="assets/bar.png" alt="choco" />
-              </div>
-            </div>
-      
-            <div class="about-us__content" >
-              <p class="choco__subtitle">About Us </p>
-              <h3 class="choco__title">Discover the joy of exceptional chocolate!</h3>
-              <p class="choco__description"> At Weston Chocolate, We specialize in crafting rich, luxurious chocolates made from the finest ingredients. Whether you're looking for a sweet treat or a gift for someone special, our handcrafted chocolates offer a moment of pure indulgence in every bite.
-              </p>
-            </div>
-          </section>
-
-          <section class="popular-foods" id="menu">
-            <h2 class="popular-foods__title" >Popular selections</h2>
-      
-            <div class="popular-foods__filters sushi__hide-scrollbar">
-              <button class="popular-foods__filter-btn active">Best sellers</button>
-              <button class="popular-foods__filter-btn">
-                Value packs
-              </button>
-              <button class="popular-foods__filter-btn">
-                Single piece
-              </button>
-              <button class="popular-foods__filter-btn">
-                Specials
-              </button>
-              <button class="popular-foods__filter-btn">
-                Custom              
-              </button>
-              <button class="popular-foods__filter-btn">All</button>
-            </div>
-      
-            <div class="popular-foods__catalogue">
-              <article class="popular-foods__card">
+        <!-- Product catalog showing chocolate options -->
+        <div class="popular-foods__catalogue">
+            <article class="popular-foods__card">
                 <img class="popular-foods__card-image" src="assets/choco.png" alt="" />
                 <h4 class="popular-foods__card-title">The Assortment</h4>
-      
                 <div class="popular-foods__card-details flex-between">
-                  <div class="popular-foods__card-rating">
-                    <img src="assets/star.svg" alt="star" />
-                    <p>4.9</p>
-                  </div>
-      
-                  <p class="popular-foods__card-price">$21.00</p>
+                    <div class="popular-foods__card-rating">
+                        <img src="assets/star.svg" alt="star" />
+                        <p>4.9</p>
+                    </div>
+                    <p class="popular-foods__card-price">$21.00</p>
                 </div>
-              </article>
-      
-              <article class="popular-foods__card active-card">
+            </article>
+
+            <article class="popular-foods__card active-card">
                 <img class="popular-foods__card-image" src="assets/box.png" alt="" />
-                <h4 class="popular-foods__card-title">The Elegance 
-                  Collection</h4>
-                
+                <h4 class="popular-foods__card-title">The Elegance Collection</h4>
                 <div class="popular-foods__card-details flex-between">
-                  <div class="popular-foods__card-rating">
-                    <img src="assets/star.svg" alt="star" />
-                    <p>5.0</p>
-                  </div>
-                  
-                  <p class="popular-foods__card-price">$19.00</p>
+                    <div class="popular-foods__card-rating">
+                        <img src="assets/star.svg" alt="star" />
+                        <p>5.0</p>
+                    </div>
+                    <p class="popular-foods__card-price">$19.00</p>
                 </div>
-              </article>
-      
-              <article class="popular-foods__card">
+            </article>
+
+            <article class="popular-foods__card">
                 <img class="popular-foods__card-image" src="assets/choco2.png" alt="" />
                 <h4 class="popular-foods__card-title">The Temptation</h4>
-      
                 <div class="popular-foods__card-details flex-between">
-                  <div class="popular-foods__card-rating">
-                    <img src="assets/star.svg" alt="star" />
-                    <p>4.7</p>
-                  </div>
-      
-                  <p class="popular-foods__card-price">$13.00</p>
+                    <div class="popular-foods__card-rating">
+                        <img src="assets/star.svg" alt="star" />
+                        <p>4.7</p>
+                    </div>
+                    <p class="popular-foods__card-price">$13.00</p>
                 </div>
-              </article>
-            </div>
-      
-            <button class="popular-foods__button">
-              Explore more
-              <img src="assets/arrow-right.svg"  alt="arrow-right" />
-            </button>
-          </section>
+            </article>
+        </div>
 
-          <section class="subscription flex-center" id="services">
-            <h2>
-              Get offers straight <br />
-              to your inbox
-            </h2>
-            <p>Sign up for Weston's newsletter</p>
-      
-            <div class="subscription__form" >
-              <input type="text" placeholder="Enter your email address"/>
-              <button>Get Started</button>
-            </div>
-          </section>
+        <!-- Button to explore more products -->
+        <button class="popular-foods__button">
+            Explore more
+            <img src="assets/arrow-right.svg" alt="arrow-right" />
+        </button>
+    </section>
 
-          <footer class="footer flex-between">
-            <h3 class="footer__logo">
-              <span>Wes</span>ton
-            </h3>
-      
-            <ul class="footer__nav">
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#food">Food</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about-us">About Us</a></li>
-            </ul>
-      
-            <ul class="footer__social">
-              <li class="flex-center">
+    <!-- Subscription Section for newsletter signup -->
+    <section class="subscription flex-center" id="services">
+        <h2>Get offers straight <br /> to your inbox</h2>
+        <p>Sign up for Weston's newsletter</p>
+
+        <div class="subscription__form">
+            <input type="text" placeholder="Enter your email address"/>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- Footer Section with quick links and social media icons -->
+    <footer class="footer flex-between">
+        <h3 class="footer__logo">
+            <span>Wes</span>ton
+        </h3>
+
+        <ul class="footer__nav">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about-us">About Us</a></li>
+        </ul>
+
+        <ul class="footer__social">
+            <li class="flex-center">
                 <img src="assets/facebook.svg" alt="facebook" />
-              </li>
-              <li class="flex-center">
+            </li>
+            <li class="flex-center">
                 <img src="assets/instagram.svg" alt="instagram" />
-              </li>
-              <li class="flex-center">
+            </li>
+            <li class="flex-center">
                 <img src="assets/twitter.svg" alt="twitter" />
-              </li>
-            </ul>
-          </footer>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
