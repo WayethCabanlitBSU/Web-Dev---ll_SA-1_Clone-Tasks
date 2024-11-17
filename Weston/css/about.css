@@ -1,96 +1,92 @@
+/* Container for the About Us section */
 .about-us {
-    display: flex;
-    min-height: 720px;
-    overflow: hidden;
-    
-  }
-  
-  .about-us__image {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 15px 0px #b1454a;
-    background: var(--color-white);
-    
-  
-    position: relative;
-  }
-  
-  .about-us__image div {
-    padding: 32px 64px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-  }
-  
-  .about-us__button {
-  position: absolute;
-  right: 0;
+  display: flex;
+  min-height: 720px;
+  overflow: hidden;
+}
 
+/* Image side of the About Us section */
+.about-us__image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 15px 0px #b1454a;
+  background: var(--color-white);
+  position: relative;
+}
+
+.about-us__image div {
+  padding: 32px 64px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Button in the About Us section */
+.about-us__button {
+  position: absolute;
   padding: 12px 32px;
   min-height: 64px;
-
   background: var(--secondary-color);
   border-radius: 32px 0 0 32px;
   border: 0;
   outline: 0;
-
   color: #fff;
   font-family: var(--plus-jakarta-sans);
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
-
   cursor: pointer;
 }
-  .about-us__button img {
-    object-fit: contain;
-    margin-left: 32px;
-  }
 
-  
-  .about-us_chocolate {
-    border-bottom: 8px solid var(--color-creamson);
-  
-    background-image: url("../../assets/about_bg1.png")
-  }
-  
-  .about-us_chocolate2 {
-    background-image: url("../../assets/about_bg2.png");
-  }
-  
-  .about-us_chocolate img {
-    width: 320px;
-    height: 300px;
-    filter: drop-shadow(0.25rem 0.5rem 0.5rem rgb(45, 45, 45));
-  }
-  
-  .about-us_chocolate2 img {
-    width: 340px;
-    height: 320px;
-    filter: drop-shadow(0.25rem 0.5rem 0.5rem rgb(45, 45, 45));
-  }
-  
- 
-  .about-us__content {
-    padding: 64px;
-  
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+.about-us__button img {
+  object-fit: contain;
+  margin-left: 32px;
+}
 
-  .about-us h3 {
-    text-shadow: 3px 2px #8B452D;
-    font-weight: 800;
-  }
+/* First chocolate image in About Us */
+.about-us_chocolate {
+  border-bottom: 8px solid var(--color-creamson);
+  background-image: url("../../assets/about_bg1.png");
+}
 
-  .about-us p{
-    font-weight: 500;
-  }
+/* Second chocolate image in About Us */
+.about-us_chocolate2 {
+  background-image: url("../../assets/about_bg2.png");
+}
+
+.about-us_chocolate img {
+  width: 320px;
+  height: 300px;
+  filter: drop-shadow(0.25rem 0.5rem 0.5rem rgb(45, 45, 45));
+}
+
+.about-us_chocolate2 img {
+  width: 340px;
+  height: 320px;
+  filter: drop-shadow(0.25rem 0.5rem 0.5rem rgb(45, 45, 45));
+}
+
+/* Content side of the About Us section */
+.about-us__content {
+  padding: 64px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Heading in About Us */
+.about-us h3 {
+  text-shadow: 3px 2px #8B452D;
+  font-weight: 800;
+}
+
+/* Text in About Us */
+.about-us p {
+  font-weight: 500;
+}
