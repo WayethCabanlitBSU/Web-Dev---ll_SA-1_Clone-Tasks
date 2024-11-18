@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elements Example</title>
+
+    <!-- Internal CSS to style the elements -->
+    <style>
+        /* Styling for block elements */
+        .block-element {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        /* Styling for inline elements */
+        .inline-element {
+            color: white;
+            background-color: #007BFF;
+            padding: 2px 5px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Block-level elements -->
+    <h2>Block Elements</h2>
+    <div class="block-element">
+        This is a <strong>block element</strong> (a `<div>` tag). It takes up the entire width of the page, creating a new line before and after itself.
+    </div>
+    <p class="block-element">
+        This is another <strong>block element</strong> (a `<p>` tag). Paragraphs are also block elements and take up full width, starting on a new line.
+    </p>
+
+    <!-- Inline elements -->
+    <h2>Inline Elements</h2>
+    <p>
+        This text contains <span class="inline-element">inline</span> elements. 
+        Inline elements like <span class="inline-element">`<span>`</span> do not start on a new line, and they only take up as much space as needed.
+        You can continue writing text after them without breaking the flow.
+    </p>
+    <p>
+        Another example of an inline element is the <a href="#" class="inline-element">anchor (`<a>`) tag</a>.
+    </p>
+
+</body>
+</html>

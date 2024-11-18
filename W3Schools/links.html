@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example with Links</title>
+    
+    <!-- Internal CSS to style links -->
+    <style>
+        /* Styling for all links */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Change link color when hovered */
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Styling for a specific link class */
+        .external-link {
+            color: #28a745;
+        }
+
+        /* Change color of external links when hovered */
+        .external-link:hover {
+            color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main content section -->
+    <h1>Welcome to My Link Page</h1>
+
+    <!-- Internal link: Links to a section on the same page -->
+    <p><a href="#about">Learn more about us</a></p>
+
+    <!-- External link: Links to an external website -->
+    <p><a href="https://www.example.com" class="external-link" target="_blank">Visit Example Website</a></p>
+
+    <!-- Mailto link: Opens the default email client to send an email -->
+    <p><a href="mailto:info@example.com">Contact Us</a></p>
+
+    <!-- Phone link: Opens the phone app (useful for mobile devices) -->
+    <p><a href="tel:+1234567890">Call Us: +1 234 567 890</a></p>
+
+
+</body>
+</html>

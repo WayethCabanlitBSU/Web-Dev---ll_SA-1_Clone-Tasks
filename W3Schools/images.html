@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example with Images</title>
+    
+    <!-- Internal CSS to style the webpage -->
+    <style>
+        /* Centering images and setting a max-width for responsiveness */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        /* Styling a container for better image presentation */
+        .image-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Adding a caption below images */
+        .caption {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main content section -->
+    <h1>Welcome to My Image Gallery</h1>
+
+    <!-- Local image: Stored locally in the project folder -->
+    <div class="image-container">
+        <img src="https://i.imgur.com/orETXNv.jpeg" alt="Monkey">
+        <p class="caption">Monkey</p>
+    </div>
+
+    <!-- External image: Pulled from a URL -->
+    <div class="image-container">
+        <img src="https://i.imgur.com/ki9BN81.jpeg" alt="More monke">
+        <p class="caption">More monke</p>
+    </div>
+
+    <!-- Image link: Clickable image that links to another page -->
+    <div class="image-container">
+        <a href="https://imgur.com/HfQmqOK">
+            <img src="https://i.imgur.com/VJ6e9VO.jpeg" alt="Small monke">
+        </a>
+        <p class="caption">Click the image to learn more about this small monke.</p>
+    </div>
+
+</body>
+</html>

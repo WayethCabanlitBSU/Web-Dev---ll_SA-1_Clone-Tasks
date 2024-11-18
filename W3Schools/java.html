@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+
+    <!-- Internal CSS to style the elements -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Interaction Example</h1>
+
+    <!-- Button that triggers JavaScript function -->
+    <button id="myButton">Click Me!</button>
+
+    <!-- Paragraph to display a message -->
+    <p id="message">This is a simple message.</p>
+
+    <!-- JavaScript code -->
+    <script>
+        // Function to handle button click
+        document.getElementById("myButton").onclick = function() {
+            // Display an alert when the button is clicked
+            alert("Hello! You clicked the button!");
+
+            // Change the text of the paragraph
+            document.getElementById("message").innerText = "You've changed the message!";
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Example</title>
+
+    <!-- Internal CSS to style elements using classes -->
+    <style>
+        /* Styling for the 'button' class */
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        /* Styling for the 'highlight' class */
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        /* Additional class for making text italic */
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Example of reusing the 'button' class for different buttons -->
+    <button class="button">Click Me</button>
+    <button class="button">Submit</button>
+
+    <!-- Applying the 'highlight' class to a paragraph -->
+    <p>This is a regular paragraph, but this part is <span class="highlight">highlighted</span>.</p>
+
+    <!-- Using both 'highlight' and 'italic' classes together -->
+    <p>Here’s another example where the text is both <span class="highlight italic">highlighted and italic</span>.</p>
+
+</body>
+</html>

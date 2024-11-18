@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+
+    <!-- Internal CSS to style the table -->
+    <style>
+        /* Basic table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        /* Styling table headers */
+        th {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styling table data cells */
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Adding a hover effect for rows */
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main content section -->
+    <h1>Sample Table</h1>
+
+    <!-- Table with headings and data -->
+    <table>
+        <!-- Table header row -->
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        
+        <!-- Table body with data rows -->
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>$1.50</td>
+                <td>4</td>
+                <td>$6.00</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.50</td>
+                <td>6</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>$0.75</td>
+                <td>5</td>
+                <td>$3.75</td>
+            </tr>
+        </tbody>
+
+        <!-- Table footer row -->
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total Cost</strong></td>
+                <td><strong>$12.75</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+

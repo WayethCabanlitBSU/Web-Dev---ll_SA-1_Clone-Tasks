@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        main {
+            flex: 3;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack main and sidebar */
+            }
+            aside {
+                margin-left: 0; /* Remove margin on smaller screens */
+                margin-top: 20px; /* Add margin on top for spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <h2>Main Content</h2>
+            <p>This is the main content area where you can put your text, images, and other content.</p>
+        </main>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is the sidebar where you can include additional information, links, or advertisements.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+</body>
+</html>
